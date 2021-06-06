@@ -17,6 +17,9 @@
 		5190DD2A266BB89300B313AE /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5190DD29266BB89300B313AE /* ComplicationController.swift */; };
 		5190DD2C266BB89400B313AE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5190DD2B266BB89400B313AE /* Assets.xcassets */; };
 		5190DD2F266BB89400B313AE /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5190DD2E266BB89400B313AE /* Preview Assets.xcassets */; };
+		5190DD43266BBE5400B313AE /* SetupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5190DD42266BBE5400B313AE /* SetupView.swift */; };
+		5190DD4B266BC2F000B313AE /* ShiftSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5190DD4A266BC2F000B313AE /* ShiftSettings.swift */; };
+		5190DD50266CDE7100B313AE /* MainMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5190DD4F266CDE7100B313AE /* MainMenu.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -76,6 +79,9 @@
 		5190DD2E266BB89400B313AE /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		5190DD30266BB89400B313AE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5190DD31266BB89400B313AE /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+		5190DD42266BBE5400B313AE /* SetupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetupView.swift; sourceTree = "<group>"; };
+		5190DD4A266BC2F000B313AE /* ShiftSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShiftSettings.swift; sourceTree = "<group>"; };
+		5190DD4F266CDE7100B313AE /* MainMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainMenu.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -122,6 +128,8 @@
 			children = (
 				5190DD21266BB89300B313AE /* ShiftLoggerApp.swift */,
 				5190DD23266BB89300B313AE /* ContentView.swift */,
+				5190DD4F266CDE7100B313AE /* MainMenu.swift */,
+				5190DD42266BBE5400B313AE /* SetupView.swift */,
 				5190DD25266BB89300B313AE /* NotificationController.swift */,
 				5190DD27266BB89300B313AE /* NotificationView.swift */,
 				5190DD29266BB89300B313AE /* ComplicationController.swift */,
@@ -129,6 +137,7 @@
 				5190DD30266BB89400B313AE /* Info.plist */,
 				5190DD31266BB89400B313AE /* PushNotificationPayload.apns */,
 				5190DD2D266BB89400B313AE /* Preview Content */,
+				5190DD4A266BC2F000B313AE /* ShiftSettings.swift */,
 			);
 			path = "ShiftLogger WatchKit Extension";
 			sourceTree = "<group>";
@@ -270,8 +279,11 @@
 				5190DD26266BB89300B313AE /* NotificationController.swift in Sources */,
 				5190DD24266BB89300B313AE /* ContentView.swift in Sources */,
 				5190DD2A266BB89300B313AE /* ComplicationController.swift in Sources */,
+				5190DD50266CDE7100B313AE /* MainMenu.swift in Sources */,
 				5190DD22266BB89300B313AE /* ShiftLoggerApp.swift in Sources */,
+				5190DD43266BBE5400B313AE /* SetupView.swift in Sources */,
 				5190DD28266BB89300B313AE /* NotificationView.swift in Sources */,
+				5190DD4B266BC2F000B313AE /* ShiftSettings.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
