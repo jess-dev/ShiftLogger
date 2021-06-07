@@ -20,23 +20,19 @@ struct SetupView: View {
                 VStack{
                     TextField("Hourly Rate:", text: $userInputHourly)
                         .onReceive(Just(userInputHourly)) { newValue in
-                            if let hourly = Int(userInputHourly), hourly != settings.hourlyRate {
-                                settings.hourlyRate = Int(hourly)
+                            if let hourly = Double(userInputHourly), hourly != settings.hourlyRate {
+                                settings.hourlyRate = Double(hourly)
                             }
                         }
                     TextField("Delivery Rate:", text: $userInputDelivery)
                         .onReceive(Just(userInputDelivery)) { newValue in
-                            if let delivery = Int(userInputDelivery), delivery != settings.deliveryRate {
-                                settings.deliveryRate = Int(delivery)
+                            if let delivery = Double(userInputDelivery), delivery != settings.deliveryRate {
+                                settings.deliveryRate = Double(delivery)
                             }
                         }
                     NavigationLink(destination: MainMenu()) {
                                         Text("Save")
                                     }
-                    Button("Print", action:{
-                        print("Delivery : \(settings.deliveryRate)")
-                        print("Hourly : \(settings.hourlyRate)")
-                    })
                 }
             }
         }

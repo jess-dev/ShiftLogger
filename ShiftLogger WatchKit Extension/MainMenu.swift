@@ -8,10 +8,10 @@ struct MainMenu: View {
         NavigationView {
             VStack {
                 HStack {
-                    Button("New Shift", action:{
-                            newShift()
-                    })
-                    .disabled(!settings.setupComplete())
+                    NavigationLink(destination: NewShiftView().environmentObject(settings)) {
+                                        Text("New Shift")
+                                    }.disabled(!settings.setupComplete())
+                    
                 }
                 HStack {
                     NavigationLink(destination: SetupView().environmentObject(settings)) {

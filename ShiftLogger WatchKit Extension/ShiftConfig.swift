@@ -8,8 +8,8 @@
 import Foundation
 
 class ShiftConfig: ObservableObject {
-    @Published var hourlyRate: Int = 0
-    @Published var deliveryRate: Int = 0
+    @Published var hourlyRate: Double = 0.0
+    @Published var deliveryRate: Double = 0.0
     
     func setupComplete() -> Bool {
         if hourlyRate > 0 && deliveryRate > 0 {
